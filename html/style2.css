@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #fdf2f8, #eef2ff);
+    color: #374151;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #e9d5ff;
+}
+
+nav h2 {
+    display:flex;
+    color: #6b21a8;
+    gap:20px;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b21a8;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #9333ea;
+}
+/*mobilni pregled*/
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100px;
+        gap: 12px;
+        margin-top:12px
+    }
+}
+
+/* uvod */
+.uvod {
+    display: flex;
+    align-items:center;
+    gap: 24px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.profilna-img{
+    width: 400px;
+    height: 500px;
+}
+
+.uvod-text h1{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.uvod-text p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 15px 0 30px;
+}
+
+.uvod span {
+    color: #9333ea;
+}
+/*mobilni pregled*/
+@media (max-width:768px){
+    .uvod {
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .profilna-img{
+        width: 140px;
+        height: 160px;
+    }
+}  
+/* BUTTON */
+.btn {
+    padding: 12px 30px;
+    background: #fbcfe8;
+    color: #831843;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f9a8d4;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #6b21a8;
+}
+
+/* CARD */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.15);
+}
+
+/* vještine */
+.vještine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.vještine {
+    background: #ddd6fe;
+    color: #4c1d95;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.vještine-text{
+    text-align:left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.vještine:hover {
+    transform: translateY(-5px);
+    background: #c4b5fd;
+}
+
+/* PROJECTS */
+.projekti-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.projekti-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.15);
+    transition: 0.3s;
+}
+
+.projekti-card video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.projekti-card h3 {
+    padding: 15px 15px 5px;
+    color: #831843;
+}
+
+.projekt-img{
+    align-content: center;
+    width:100%;
+    height:180px;
+}
+.projekti-card p {
+    padding: 0 15px 20px;
+    font-size: 14px;
+}
+
+.projekti-card:hover {
+    transform: translateY(-8px);
+}
+
+.hobi-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.hobi-card{
+    background: #ffffff;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.15);
+    transition: 0.3s;
+    align-content: center;
+}
+
+.hobi-card h3{
+    display: block;
+    align-content:center;
+    padding: 15px 15px 5px;
+    color: #831843;
+}
+
+.hobi-card img{
+    display: block;
+    align-content: center;
+    width:100%;
+    height:400px;
+}
+
+.hobi-card:hover{
+    transform: translateY(-8px);
+}
+
+/* CONTACT */
+.kontakt p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #fce7f3;
+    color: #831843;
+    margin-top: 60px;
+}
